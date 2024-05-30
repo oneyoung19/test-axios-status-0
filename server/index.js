@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3001
+const port = 3002
 
 app.use((req, res, next) => {
   res.set('access-control-allow-origin', 'http://10.0.40.215:8083')
