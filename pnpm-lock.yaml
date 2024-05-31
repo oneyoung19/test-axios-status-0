@@ -67,6 +67,9 @@ devDependencies:
   less-loader:
     specifier: ^5.0.0
     version: 5.0.0(less@3.13.1)(webpack@4.47.0)
+  vconsole:
+    specifier: ^3.15.1
+    version: 3.15.1
   vue-template-compiler:
     specifier: ^2.6.11
     version: 2.7.16
@@ -3669,6 +3672,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /copy-text-to-clipboard@3.2.0:
+    resolution: {integrity: sha512-RnJFp1XR/LOBDckxTib5Qjr/PMfkatD0MUCQgdpqS8MdKiNUzBjAQBEN6oUy+jW7LI93BBG3DtMB2KOOKpGs2Q==}
+    engines: {node: '>=12'}
+    dev: true
+
   /copy-webpack-plugin@5.1.2(webpack@4.47.0):
     resolution: {integrity: sha512-Uh7crJAco3AjBvgAy9Z75CjK8IG+gxaErro71THQ+vv/bl4HaQcpkexAY8KVW/T6D2W2IRr+couF/knIRkZMIQ==}
     engines: {node: '>= 6.9.0'}
@@ -6894,6 +6902,10 @@ packages:
       thunky: 1.1.0
     dev: true
 
+  /mutation-observer@1.0.3:
+    resolution: {integrity: sha512-M/O/4rF2h776hV7qGMZUH3utZLO/jK7p8rnNgGkjKUw8zCGjRQPxB8z6+5l8+VjRUQ3dNYu4vjqXYLr+U8ZVNA==}
+    dev: true
+
   /mute-stream@0.0.8:
     resolution: {integrity: sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==}
     dev: true
@@ -9565,6 +9577,15 @@ packages:
   /vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
+    dev: true
+
+  /vconsole@3.15.1:
+    resolution: {integrity: sha512-KH8XLdrq9T5YHJO/ixrjivHfmF2PC2CdVoK6RWZB4yftMykYIaXY1mxZYAic70vADM54kpMQF+dYmvl5NRNy1g==}
+    dependencies:
+      '@babel/runtime': 7.24.6
+      copy-text-to-clipboard: 3.2.0
+      core-js: 3.37.1
+      mutation-observer: 1.0.3
     dev: true
 
   /vendors@1.0.4:
