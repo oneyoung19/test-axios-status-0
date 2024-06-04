@@ -1,4 +1,9 @@
+const isDev = process.env.NODE_ENV === 'development'
 module.exports = {
+  // productionSourceMap: isDev,
+  configureWebpack: {
+    devtool: isDev ? 'source-map' : undefined,
+  },
   devServer: {
 		proxy: {
 			'^/api': {
